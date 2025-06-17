@@ -1,5 +1,9 @@
 # canaduck_microservices
 
+## MONCZEWSKI Gabriel
+## FROISSANT Maxime
+
+
 ## À quel moment la socket côté serveur est-elle bloquante ?
 
 Lorsqu'elle attend de recevoir un message.
