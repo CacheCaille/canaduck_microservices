@@ -58,17 +58,24 @@ En utilisant try/except.
 
 ## Pourquoi structurer les messages avec /commande ?
 
-
+Afin d'avoir une sorte de standard pour le traitement des messages côté serveur.
 
 ## Comment distinguer facilement les types de messages côté serveur ?
+On peut rajouter au message envoyé par le serveur un préfixe du type "Serveur > {message}"
 
 ## Que se passe-t-il si deux clients envoient des messages en même temps ?
+Les clients sont sur des threads et ne partage aucune section critique donc il ne se passe rien de grave
 
 ## Peut-on garder un état partagé entre clients ? Est-ce souhaitable ?
 
+
 ## Que faut-il pour aller plus loin vers une vraie messagerie ?
+Il faudrait que les clients voient les messages des autres clients
 
 ## Pourquoi faut-il protéger certaines sections du code ?
+Pour éviter un écriture simultanée sur la ressource critique
 
 ## Que risque-t-on si deux clients modifient une même ressource simultanément ?
+Sinon, deux threads peuvent écrire en même temps sur la même donnée et cela peut amener à une corruption de la donnée
+
 
