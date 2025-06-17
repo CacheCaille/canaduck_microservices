@@ -9,3 +9,4 @@ while True:
        break
     msg = client.recv(1024).decode()
     print("Réponse serveur :",msg)
+client.close()

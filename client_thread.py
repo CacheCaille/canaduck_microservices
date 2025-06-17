@@ -19,3 +19,4 @@ while True:
     client.send(message.encode())
     if message == "/bye":
         break
+client.close()

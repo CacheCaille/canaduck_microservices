@@ -14,3 +14,4 @@ while True:
         reponse = input("Répondre > ")
         conn.send(reponse.encode())
     conn.close()
+serveur.close()

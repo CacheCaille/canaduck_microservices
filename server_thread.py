@@ -22,5 +22,5 @@ serveur.listen(1)
 while True:
     conn, addr = serveur.accept()
     threading.Thread(target=gerer_client, args=(conn,addr)).start()
-
+serveur.close()
 

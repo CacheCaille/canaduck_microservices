@@ -31,5 +31,5 @@ while True:
     connections.append(conn)
     print("Clients connectés :",connections)
     threading.Thread(target=gerer_client, args=(conn,addr)).start()
-
+serveur.close()
 

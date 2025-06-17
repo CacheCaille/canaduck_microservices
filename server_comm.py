@@ -23,3 +23,4 @@ while True:
         elif commande == "/help":
             conn.send("— /all <texte> : message simple à stocker. \n— /me <action> : message stylisé. \n— /bye : fermeture de session.\n — /help : commande d’aide.".encode())
     conn.close()
+serveur.close()

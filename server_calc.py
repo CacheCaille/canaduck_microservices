@@ -17,3 +17,4 @@ while True:
         except Exception as e:
             conn.send(f"Erreur: {e}".encode())
     conn.close()
+serveur.close()
